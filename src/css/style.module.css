@@ -50,20 +50,21 @@
     width: 100% !important;
   }
 }
-@media screen and (max-width: 572px) {
-  .container_fix {
-    width: 70vw !important;
-  }
-  .card {
-    width: 80% !important;
-    min-height: 200px;
-  }
-}
-@media screen and (max-width: 440px) {
+/* @media screen and (max-width: 576px) {
   .container_fix {
     width: 90vw !important;
   }
+  .col_fix {
+    width: 50% !important;
+    padding: 0px;
+  }
+  .card {
+    width: 100% !important;
+    min-height: 200px;
+  }
+} */
+/* @media screen and (max-width: 440px) {
   .card {
     width: 95% !important;
   }
-}
+} */

@@ -4,6 +4,7 @@ import { db, doc, updateDoc, deleteDoc } from "../lib/firebaseDatabase";
 import ModalView from "./ModalView";
 import FormController from "./FormController";
 import NotesView from "./NotesView";
+
 export default function ShowNotes({ notes }) {
   let [showModal, setShowModal] = useState(false);
 

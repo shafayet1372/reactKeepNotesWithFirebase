@@ -49,8 +49,9 @@ export default function FormController({
 
   let updateNote = () => {
     let { id } = editedValue;
+    let obj = { ...values, edited_at: new Date() };
     let docRef = doc(db, "reactnotes", id);
-    updateDoc(docRef, values)
+    updateDoc(docRef, obj)
       .then((result) => clearEditedValue())
       .catch((e) => alert(2));
   };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import SingleCard from "./Card";
+import style from "../css/style.module.css";
 export default function NotesView({
   allNotes,
   deleteNoteHandler,
@@ -15,7 +16,7 @@ export default function NotesView({
       lg={6}
       xl={4}
       sm={6}
-      className="my-2 d-flex justify-content-center"
+      className={`my-2 d-flex justify-content-center ${style.col_fix}`}
     >
       <SingleCard
         deleteNoteHandler={deleteNoteHandler}

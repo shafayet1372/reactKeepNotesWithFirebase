@@ -60,8 +60,9 @@ export default function Index({
         </div>
         <div>
           <small>
-            edited at{" "}
-            {new Date(values.edited_at.seconds * 1000).toLocaleTimeString()}
+            edited
+            {" " +
+              new Date(values.edited_at.seconds * 1000).toLocaleTimeString()}
           </small>
         </div>
       </div>
